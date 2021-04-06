@@ -1,0 +1,2 @@
+# HDEFapp
+HDEF web app is a website for an organization that accepts donations from external donors and offers tuition to University of Limpopo students. This was part of our final year project, the main function of the application includes capturing information about the users and the items donated. PostgraSQL was used as our main database to store important information about the donors and the products donated. It was created using Django, JavaScript, bootstrap, HTML5/CSS, and PostgreSQL database.
