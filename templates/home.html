@@ -1,0 +1,143 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+  <!-- Masthead -->
+  <header class="masthead text-light text-center" id="homehead">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <h1 class="display-3 mb-6" id="moto">Reassuring lost hope and securing a future for <span class="text-warning">many!</span></h1>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row justify-content-center">
+              <div class="col-12 col-md-4 pt-3">
+                <a href="{% url 'index' %}" class="btn btn-lg btn-outline-secondary">
+              Donate To Us!
+              </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3" id="tutoring">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-4">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"><img src="/static/home/Tutoring.jpg" class="img-rounded" style="width: 200px; height: 250px"></i>
+            </div>
+            <h5 class="text-dark">Tutoring Services</h5>
+            <p class="lead mb-0 ">We offer the best tutoring Sessions to the people around Turfloop and the surrounding areas</p>
+          </div>
+        </div>
+        <div class="col-lg-3" id="Donations">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-4">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"><img src="/static/home/donations.jpg" class="img-rounded" style="width: 200px; height: 250px"></i>
+            </div>
+            <h5 class="text-dark">Donations</h5>
+            <p class="lead mb-0">Make a difference by donating to us! secure a future for many.</p>
+          </div>
+        </div>
+        <div class="col-lg-3" id="Events">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-4 ">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"><img src="/static/home/events (2).jpg" class="img-rounded" style="width: auto; height: 250px"></i>
+            </div>
+            <h5 class="text-dark">Events</h5>
+            <p class="lead mb-0">Be there on our upcoming events, get informed, be inspired.</p>
+          </div>
+        </div>
+        <div class="col-lg-3" id="Community">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-4">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"><img src="/static/home/community.jpg" class="img-rounded" style="width: 200px; height: 250px"></i>
+            </div>
+            <h5 class="text-dark">Community service</h5>
+            <p class="lead mb-0">Join us in doing community work for the benefit and betterment of our community</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- meet the team -->
+<div class="container py-5" id="team">
+    <div class="row mb-4 justify-content-center">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Meet Our team</h2>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5" id="team1">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Thomas Mamabolo</h5><span class="small text-uppercase text-muted">Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"> </i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5" id="team2">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Samuel Sekhukhune</h5><span class="small text-uppercase text-muted">Treasure</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"> </i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5" id="team3">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Mariam Mohlala</h5><span class="small text-uppercase text-muted">Secretary</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"> </i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5" id="team4">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">John Molepo</h5><span class="small text-uppercase text-muted">President</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-twitter"> </i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fab fa-linkedin-in"> </i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+    </div>
+  </div>
+
+{% block footer %}
+{% endblock %}
+{% endblock %}

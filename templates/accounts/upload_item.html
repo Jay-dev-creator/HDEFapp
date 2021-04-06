@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+  <header class="masthead d-flex" id="donationhead">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1" style="font-family: 'Poiret One', cursive;">Make a Donation</h1>
+    <form method="post" enctype="multipart/form-data">
+    {% csrf_token %} }
+    {{form.as_p}}
+    <button type="submit" class="btn btn-danger">Confirm Donation</button>
+    </form>
+
+    </div>
+  </header>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+<h1>Thank you for donating</h1>
+<!--
+  <header class="masthead d-flex" id="donationhead">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1" style="font-family: 'Poiret One', cursive;">DONATED Items</h1>
+<table class="table table-bordered table-dark table-responsive-sm">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Names</th>
+        <th>surname</th>
+        <th>Cell_number</th>
+        <th>email</th>
+        <th>Street_name</th>
+        <th>City</th>
+        <th>Province</th>
+        <th>Item_type</th>
+        <th>Item_name</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in items %}
+        <tr>
+           <th>
+                {% if item.item_pic %}
+                    <img src="{{ item.item_pic.url }}" alt="{{ item.item_type }}" style="width: 100px;">
+                {% else %}
+                    <span class="text-mute">No pic</span>
+                {% endif %}
+            </th>
+            <td>{{ item.id }}</td>
+            <td>{{ item.names }}</td>
+            <td>{{ item.surname }}</td>
+            <td>{{ item.cell_number }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.street }}</td>
+            <td>{{ item.city }}</td>
+            <td>{{ item.province }}</td>
+            <td>{{ item.item_type }}</td>
+            <td>{{ item.item_name }}</td>
+            <td>{{ item.pdf }} <a href="{{ item.item_pic.url }}" class="btn btn-primary btn-sm">Download PDF</a></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+    </div>
+  </header>
+-->
+
+{% endblock %}

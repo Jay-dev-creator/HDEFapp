@@ -1,0 +1,62 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+{% load static %}
+
+{% load crispy_forms_tags %}
+<header class="masthead text-white text-center">
+<div class="login-form">
+    <form method="post">
+        {% csrf_token %}
+        <div class="avatar"><i class="fa fa-user" aria-hidden="true"></i></div>
+    	<h4 class="modal-title">Create an account</h4>
+        {{form.as_p}}
+        <input type="submit" value="Sign up" class="btn btn-success">
+        <p>already have an account? <a href="{% url 'index' %}">sign in</a></p>
+    </form>
+</div>
+</header>
+  <!--
+<div class="container justify-content-center m-5">
+        <div class="card" style="width:70rem">
+           <div class="card-body bg-primary text-white">
+               <div class="card-header text-center">Register an Account</div>
+
+               <form method="post">
+
+                   {{form.as_p}}
+                                   <input type="submit" value="Sign up" class="btn btn-success">
+
+                <p>already have an account? <a href="{% url 'home' %}">sign in</a></p>
+                   <input type="submit" value="Sign up">
+               </form>
+
+            <form method="post" class="text-center pt-5">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{form.username.label}}
+                    {{form.username}}
+                </div>
+                <div class="form-group">
+                    {{form.email.label}}
+                    {{form.email}}
+                </div>
+                <div class="form-group">
+                    {{form.password1.label}}
+                    {{form.password1}}
+                </div>
+                <div class="form-group">
+                    {{form.password2.label}}
+                    {{form.password2}}
+                </div>
+
+                <input type="submit" value="Sign up" class="btn btn-success">
+
+                <p>already have an account? <a href="{% url 'home' %}">sign in</a></p>
+            </form>
+            -->
+               </div>
+        </div>
+</div>s
+{% endblock %}

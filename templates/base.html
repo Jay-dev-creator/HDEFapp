@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@100&family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+    <!--Scrollreveal animations-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+
+  <!-- causasel -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+
+    {% block title %}<title>HDEF | Home</title>{% endblock %}
+
+  <style>
+      @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331!important;
+            }
+        }
+.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+     html { font-size: 0.75rem; }
+
+      @media (min-width: 576px) {
+          html { font-size: 0.75rem; }
+          #me {width: 100%;}
+      }
+      @media (min-width: 768px) {
+          html { font-size: 0.75rem; }
+          #me {width: 50%;}
+      }
+      @media (min-width: 992px) {
+          html { font-size: 0.75rem; }
+          img {width: 30%;}
+      }
+      @media (min-width: 1200px) {
+          html { font-size: 1rem; }
+          #me {width: 30%;}
+      }
+  </style>
+  </head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="">
+        <a class="navbar-brand" href="#"><img src="/static/home/logo-icon.png" class="img-rounded" style="width: 50px; height: 40px"></a>
+      </a>
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'tutoring' %}">Tutoring</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">Donations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About</a>
+          </li>
+        </ul>
+{% block signin %}
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="{% url 'index' %}" class="nav-link border border-primary rounded">
+              Sign In
+            </a>
+          </li>
+          <li class="nav-item" style="padding-left: 10px;">
+            <a href="{% url 'index' %}" class="nav-link border border-success rounded">
+              Donate
+            </a>
+          </li>
+        </ul>
+{% endblock %}
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+<!--
+
+  Navigation
+  <nav class="navbar navbar-expand-lg bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="/static/home/logo-icon.png" class="img-rounded" style="width: 70px; height: 60px"></a>
+      <div class="float-left" id="navbar">
+        <a class="navbar-link text-white mr-3 " href="{% url 'home' %}">Home</a>
+        <a class="navbar-link text-white mr-3 " href="{% url 'tutoring' %}">Tutoring</a>
+        <a class="navbar-link text-white mr-3 " href="{% url 'index' %}">Donations</a>
+        <a class="navbar-link text-white mr-3 " href="">Events</a>
+        <a class="navbar-link text-white mr-3 " href="">About us</a>
+      </div>
+      <div class="float-right">
+        <a class="btn btn-primary" href="{% url 'index' %}">Sign In</a>
+        <a class="btn btn-success" href="{% url 'index' %}">Donate</a>
+      </div>
+    </div>
+  </nav>
+-->
+    {% block body %}
+    {% endblock %}
+
+ <!-- Footer-->
+<footer class="page-footer font-small bg-dark text-light pt-5" id="footer">
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+    <!-- Grid row -->
+    <div class="row">
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+        <!-- Content -->
+        <h6 class="text-uppercase mt-3 mb-4">Some of our sponsors</h6>
+        <img src="/static/home/index.png" class="img-rounded" style="width: 350px; height: 150px">
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none">
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+        <!-- Links -->
+        <h6 class="text-uppercase mt-3 mb-4">Get in touch</h6>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white"><i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp; +27716488958</i></a>
+          </li><br>
+          <li>
+            <a href="#!" class="text-white"><i class="fa fa-envelope" aria-hidden="true">&nbsp;&nbsp; infohdef@gmail.com</i></a>
+          </li><br>
+          <li>
+            <a href="#!" class="text-white"><i class="fa fa-map-marker" aria-hidden="true">&nbsp;&nbsp;Private bag x1106<br>&nbsp;&nbsp;&nbsp;&nbsp;Sovenga<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;International student office: 0727</i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h6 class="text-uppercase mt-3 mb-4">Quick Links</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="{% url 'home' %}" class="text-white">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'tutoring' %}" class="text-white">Tutoring</a>
+          </li>
+          <li>
+            <a href="{% url 'index' %}" class="text-white">Donations</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">about us</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <img src="/static/home/logo-icon.png" class="img-rounded" style="width: 300px; height: 250px">
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+  <!-- Call to action -->
+  <ul class="list-unstyled list-inline text-center py-2">
+    <li class="list-inline-item">
+      <h5 class="mb-1">Register for free</h5>
+    </li>
+    <li class="list-inline-item">
+      <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+    </li>
+  </ul>
+  <!-- Call to action -->
+
+  <hr>
+
+  <!-- Social buttons -->
+  <ul class="list-unstyled list-inline text-center">
+    <li class="list-inline-item">
+      <a class="btn-floating btn-fb mx-1">
+        <i class="fab fa-facebook-f"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-tw mx-1">
+        <i class="fab fa-twitter"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-gplus mx-1">
+        <i class="fab fa-google-plus-g"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-li mx-1">
+        <i class="fab fa-linkedin-in"> </i>
+      </a>
+    </li>
+    <li class="list-inline-item">
+      <a class="btn-floating btn-dribbble mx-1">
+        <i class="fab fa-dribbble"> </i>
+      </a>
+    </li>
+  </ul>
+  <!-- Social buttons -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" class="text-white"> HIGHER DESTINY EDUCATIONAL FOUNDATION</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  window.sr = ScrollReveal();
+  sr.reveal('#moto', {
+    delay: 2000,
+    duration: 2000,
+    origin: 'top',
+    distance: '2px',
+  })
+  sr.reveal('#navbar', {
+     duration: 1000,
+     origin: 'top'
+   })
+  sr.reveal('#tutoring', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '100px',
+    viewfactor: 0.2,
+    delay: 1000,
+  })
+    sr.reveal('#Donations', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '100px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#Events', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '100px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#Community', {
+    duration: 4000,
+    origin: 'bottom',
+    distance: '100px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#team', {
+    duration: 1000,
+    origin: 'left',
+    distance: '200px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#team1', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '100px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#team2', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '200px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#team3', {
+    duration: 3000,
+    origin: 'bottom',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#team4', {
+    duration: 4000,
+    origin: 'bottom',
+    distance: '400px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#footer', {
+    duration: 4000,
+    origin: 'bottom',
+    distance: '400px',
+    viewfactor: 0.2,
+  })
+  sr.reveal('#donationhead', {
+    duration: 2000,
+    origin: 'top',
+    distance: '0px',
+    viewfactor: 0.2,
+    easing: 'ease-in-out',
+  })
+  sr.reveal('#homehead', {
+    duration: 2000,
+    origin: 'top',
+    distance: '0px',
+    viewfactor: 0.2,
+    easing: 'ease-in-out',
+  })
+
+</script>
+ <script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
+</body>
+</html>

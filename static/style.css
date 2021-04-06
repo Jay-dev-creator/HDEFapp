@@ -1,0 +1,297 @@
+{% load static %}
+
+
+/*navbar*/
+
+
+/* home */
+
+
+/* donations */
+#donationhead {
+  min-height: 40rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: url(/static/Donate/donatebackground.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#donationhead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url(/static/home/background5.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: relative;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+header.masthead h1 {
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px grey;
+  /*font-family: 'Niconne', cursive;*/
+  /*font-family: 'Big Shoulders Inline Text', cursive;*/
+  /*font-family: 'Poiret One', cursive;*/
+  font-family: 'Fredericka the Great', cursive;
+
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 5rem;
+    /*font-family: 'Big Shoulders Inline Text', cursive;
+    font-family: 'Poiret One', cursive;
+    /*font-family: 'Xanh Mono', monospace;*/
+    font-family: 'Fredericka the Great', cursive;
+  }
+}
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+  .features-icons-item {
+    max-width: 20rem;
+    .features-icons-icon {
+      height: 7rem;
+    }
+  }
+}
+
+/* Meet the Team */
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+
+/* forms */
+
+body {
+	color: #999;
+	background: #f5f5f5;
+	font-family: 'Varela Round', sans-serif;
+}
+.form-control {
+	box-shadow: none;
+	border-color: #ddd;
+}
+.form-control:focus {
+	border-color: #4aba70;
+}
+.login-form {
+	width: 350px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.login-form form {
+	color: #434343;
+	border-radius: 1px;
+	margin-bottom: 15px;
+	background: #fff;
+	border: 1px solid #f3f3f3;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.login-form h4 {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+.login-form .avatar {
+	color: #fff;
+	margin: 0 auto 30px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #4aba70;
+	padding: 15px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.login-form .avatar i {
+	font-size: 62px;
+}
+.login-form .form-group {
+	margin-bottom: 20px;
+}
+.login-form .form-control, .login-form .btn {
+	min-height: 40px;
+	border-radius: 2px;
+	transition: all 0.5s;
+}
+.login-form .close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+.login-form .btn, .login-form .btn:active {
+	background: #4aba70 !important;
+	border: none;
+	line-height: normal;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+	background: #42ae68 !important;
+}
+.login-form .checkbox-inline {
+	float: left;
+}
+.login-form input[type="checkbox"] {
+	position: relative;
+	top: 2px;
+}
+.login-form .forgot-link {
+	float: right;
+}
+.login-form .small {
+	font-size: 13px;
+}
+.login-form a {
+	color: #4aba70;
+}
+
+/*form 2*/
+
+.form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+
